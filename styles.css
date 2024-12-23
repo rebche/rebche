@@ -1,13 +1,18 @@
 :root {
-    --background-color: #ffe0e9;
+    --background-color: #000;
     --link-hover-color: #7871aa;
     --selected-color: #4e5283;
-    --text-color: #000;
 }
 
 body {
     font-family: 'Baskerville', sans-serif;
     background-color: var(--background-color);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 a {
@@ -15,32 +20,40 @@ a {
     color: black;
 }
 
-/* homepage */
-.homepage {
+/* home page */
+
+.main {
+    background-color: #fff;
+    width: 600px;
+    height: 250px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 97vh;
 }
 
-.homepage img {
-    width: 30%;
-    height: auto;
+.main .content {
+    border: 1px solid black;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    height: 90%;
 }
 
 .homepage p {
     margin: 0;
 }
 
-.homepage .greeting {
+.main .greeting {
     font-size: 35px;
     font-weight: 550;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-bottom: 15px;
 }
 
-.homepage .welcome {
+.main .welcome {
     font-size: 20px;
     margin: 5px;
 }
@@ -57,6 +70,19 @@ a {
     color: var(--selected-color);
 }
 
-/* about - navbar */
+.credits {
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+}
 
-/* about - main section */
+.credits a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.credits a:hover {
+    color: var(--selected-color);
+}
