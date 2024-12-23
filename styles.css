@@ -1,3 +1,62 @@
-/* navbar {
+:root {
+    --background-color: #ffe0e9;
+    --link-hover-color: #7871aa;
+    --selected-color: #4e5283;
+    --text-color: #000;
+}
 
-} */
+body {
+    font-family: 'Baskerville', sans-serif;
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* homepage */
+.homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
+
+.homepage img {
+    width: 30%;
+    height: auto;
+}
+
+.homepage p {
+    margin: 0;
+}
+
+.homepage .greeting {
+    font-size: 35px;
+    font-weight: 550;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.homepage .welcome {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.directory {
+    font-size: 20px;
+    padding-top: 15px;
+    display: flex;
+    gap: 30px;
+    transition: 0.1s;
+}
+
+.directory a:hover {
+    color: var(--selected-color);
+}
+
+/* about - navbar */
+
+/* about - main section */
