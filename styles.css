@@ -23,8 +23,8 @@ a {
 
 .main {
     background-color: #fff;
-    width: 600px;
-    height: 250px;
+    width: 65vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
