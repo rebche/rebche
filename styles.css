@@ -17,7 +17,6 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
 }
 
 /* home page */
@@ -63,6 +62,10 @@ a {
     padding-top: 15px;
     display: flex;
     gap: 30px;
+}
+
+.directory a {
+    color: #000;
     transition: 0.1s;
 }
 
@@ -79,11 +82,68 @@ a {
 
 .credits a {
     color: #fff;
-    text-decoration: none;
     transition: 0.1s;
 }
 
 .credits a:hover {
     color: var(--selected-color);
 }
+
+/* about me page */
+.about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+    width: 97vw;
+    height: 97vh;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    transition: 0.1s;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    color: var(--selected-color);
+}
+
+.navbar .credits a {
+    font-size: 12px;
+}
+
+.navbar a.current {
+    font-weight: bold;
+}
+
+.about-background {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    width: 75vw;
+    height: 70vh;
+}
+
+.about-content {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    width: 97%;
+    height: 95%;
+    margin: auto;
+}
+
 
