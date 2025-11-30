@@ -122,12 +122,22 @@ a:hover {
 
 }
 
-.greeting {
+#greeting {
+    font-family: "Noto Serif", serif;
+    font-weight: 100;
+    font-style: italic;
     text-align: center;
     font-size: 50px;
-    font-weight: 500;
     margin-bottom: -45px;
+
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 0.5s ease-in-out;
 }
+
 
 .welcome {
     text-align: center;
@@ -179,26 +189,26 @@ a:hover {
 
 #snackbar.show {
     visibility: visible;
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    -webkit-animation: slideUp 0.5s, slideDown 0.5s 2.5s;
+    animation: slideUp 0.5s, slideDown 0.5s 2.5s;
 }
 
-@-webkit-keyframes fadein {
+@-webkit-keyframes slideUp {
     from {bottom: 0; opacity: 0;}
     to {bottom: 30px; opacity: 1;}
 }
 
-@keyframes fadein {
+@keyframes slideUp {
     from {bottom: 0; opacity: 0;}
     to {bottom: 30px; opacity: 1;}
 }
 
-@-webkit-keyframes fadeout {
+@-webkit-keyframes slideDown {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
 }
 
-@keyframes fadeout {
+@keyframes slideDown {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
 }

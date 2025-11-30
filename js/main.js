@@ -17,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 })
 
+// drop-down arrow change animation for work page
 
 function dropdown(project, event) {
     const content = document.getElementById(project);
@@ -31,6 +32,7 @@ function dropdown(project, event) {
         arrow.src = arrow.dataset.downArrow;
     }
 }
+
 
 window.onclick = function(event) {
     if (!event.target.closest(".dropdown-arrow")) {
@@ -49,7 +51,7 @@ window.onclick = function(event) {
         });
     }
 }
-
+// snackbar pop-up
 function snackbar() {
     var x = document.getElementById("snackbar");
 
@@ -57,3 +59,21 @@ function snackbar() {
 
     setTimeout(function(){x.className = x.className.replace("show", "");}, 3000);
 }
+
+// home page greeting animation + fade
+
+var greetings = ["Hello!", "你好!", "¡Hola!"];
+var counter = 0;
+var currentLanguage = document.getElementById('greeting');
+setInterval(changeLanguage, 3500);
+
+function changeLanguage() {
+    currentLanguage.style.opacity = '0';
+    setTimeout(() => {
+    currentLanguage.innerHTML = greetings[counter];
+    counter++;
+    if (counter >= greetings.length) {counter = 0;}   
+    currentLanguage.style.opacity = '1';
+    }, 500);
+}
+
