@@ -1,149 +1,289 @@
+/* default customizations */
+
+/* REMOVES ALL DEFAULT PADDINGS/MARGINS
+   USE IN FUTURE
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*/
+
 :root {
-    --background-color: #000;
-    --link-hover-color: #7871aa;
-    --selected-color: #4e5283;
+    background-color: #ffffff;
 }
 
+
 body {
-    font-family: 'Baskerville', sans-serif;
-    background-color: var(--background-color);
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    padding: 0;
 }
 
 a {
+    color: black;
     text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #ffccff;
+}
+
+.header {
+    margin-top: 50px;
+    font-size:40px;
+    font-weight: 1000px;
+    text-decoration: underline;
+    text-decoration-color:#ffccff
+}
+
+.navbar {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height: 10%;
+    transition: bottom 0.5s; /* maybe bottom here */
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+    background-color: #fff;
+    box-shadow: 0px -1px 5px #ffccff;
+
 }
 
 /* home page */
 
-.main {
-    background-color: #fff;
-    width: 65vh;
-    height: 30vh;
+.homepage {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main .content {
-    border: 1px solid black;
-    background: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    width: 95%;
-    height: 90%;
+    justify-content:center;
+    align-items: center;
+    
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
-.homepage p {
-    margin: 0;
+.greeting {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: -45px;
 }
 
-.main .greeting {
-    font-size: 35px;
-    font-weight: 550;
-    margin-top: 15px;
+.welcome {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.links {
+    font-size: 25px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links .about-link {
+    margin-top: -25px;
+}
+
+.links .work-link {
+    margin-bottom: 10px;
+}
+
+.links .night-mode {
+    width: 5%;
+    height: auto;
+}
+.credits {
+    margin-top: 100px;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* about page */
+.about-page {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    max-width:600px;
+
+}
+
+
+.bio {
+    font-size: 25px;
+}
+
+.roles {
+    list-style-type: circle;
+    font-size: 25px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+.email {
+    padding: 1%
+}
+
+.email-button {
+    max-width: 24px;
+    width: auto;
+    height: auto;
+}
+
+.linkedin {
+    padding:1%;
+}
+
+.linkedin-button {
+    max-width:24px;
+    width: auto;
+    height: auto;
+}
+
+.github {
+    padding: 1%;
+}
+
+.github-button {
+    max-width: 24px;
+    width: auto;
+    height: auto;
+}
+
+
+.home-icon {
+    max-width: 30px;
+    width: auto;
+    height: auto;
+    margin-bottom: -5px;
+    padding-left: 50px;
+}
+
+.navbar .night-mode {
+    max-width: 30px;
+    width: auto;
+    height: auto;
+    margin-bottom: -5px;
+    padding-right: 50px;
+}
+
+#link-about, #link-work {
+    font-size: 25px;
+}
+
+
+/*work page */
+.work-page {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    max-width:600px;
+}
+
+.work-content {
+    width:100%;
+}
+
+.project-1-closed, .project-2-closed, .project-3-closed {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center;
+    font-size: 25px;
     margin-bottom: 15px;
 }
 
-.main .welcome {
-    font-size: 20px;
-    margin: 5px;
+.semester-fall {
+    padding-right: 50px;
+    white-space: nowrap;
 }
 
-.directory {
-    font-size: 20px;
-    padding-top: 15px;
-    display: flex;
-    gap: 30px;
+.semester-spring {
+    padding-right: 30px;
+    white-space: nowrap;
 }
 
-.directory a {
-    color: #000;
-    transition: 0.1s;
+.project-1-closed p, .project-2-closed p, .project-3-closed p{
+    margin: 0;
 }
 
-.directory a:hover {
-    color: var(--selected-color);
+.dropdown-arrow {
+    max-width:15px;
+    width:100%;
+    height: auto;
+    cursor: pointer;
 }
 
-.credits {
-    color: #fff;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 12px;
-}
-
-.credits a {
-    color: #fff;
-    transition: 0.1s;
-}
-
-.credits a:hover {
-    color: var(--selected-color);
-}
-
-/* about me page */
-.about-me {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    
-    width: 97vw;
-    height: 97vh;
-}
-
-.navbar {
-    display: flex;
+.dropdown-header {
+    display:flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    width: 100%;
 }
 
-.navbar a {
-    color: #fff;
-    transition: 0.1s;
-    font-size: 20px;
-}
-
-.navbar a:hover {
-    color: var(--selected-color);
-}
-
-.navbar .credits a {
-    font-size: 12px;
-}
-
-.navbar a.current {
-    font-weight: bold;
-}
-
-.about-background {
-    background-color: #fff;
+.project-title {
+    width: 100%;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    width: 75vw;
-    height: 70vh;
+    border-bottom: 1px solid #ffccff;
 }
 
-.about-content {
-    border: 1px solid black;
+.drop-down {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    background: none;
-    width: 97%;
-    height: 95%;
-    margin: auto;
+    padding-bottom: 0px;
 }
+
+.content {
+    width: 100%;
+    max-height: 0;
+    background-color: #fffaff;
+    overflow: hidden;
+}
+
+.content.show {
+    max-height: 300px;
+    overflow:auto;
+}
+
 
 
