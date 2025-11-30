@@ -1,10 +1,10 @@
 // navbar pop-up
 window.addEventListener('DOMContentLoaded', () => {
-    let prevScrollPosition = window.pageYOffset;
+    let prevScrollPosition = window.scrollY;
     window.addEventListener("scroll", fade);
     
     function fade() {
-        let currentScrollPosition = window.pageYOffset;
+        let currentScrollPosition = window.scrollY;
     
         if (prevScrollPosition > currentScrollPosition) {
             document.getElementById("navbar").style.bottom = "0";
