@@ -6,6 +6,6 @@ things needed to be added:
 - optimization for viewing on mobile/different devices
 - more projects...
 
-view: rebche.github.io/rebche
+view: rebche.github.io/portfolio
 
 hehe
