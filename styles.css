@@ -319,6 +319,10 @@ a:hover {
     width:100%;
 }
 
+.work-intro {
+    font-size: 25px;
+}
+
 .project-1-closed, .project-2-closed, .project-3-closed {
     display: flex;
     flex-direction: row;
@@ -377,15 +381,14 @@ a:hover {
     max-height: 0;
     background-color: #fffaff;
     overflow: hidden;
-    transition: max-height 1s ease, opacity 0.3s ease;
+    transition: max-height 0.5s linear, opacity 0.3s linear;
 }
 
 .content.show {
-    transition: top 0.5s;
     max-height: 500px;
-    overflow:auto;
 
-    /* transition: max-height 1s ease, opacity 0.3s ease; */
+
+    overflow:auto;
 
 
     -webkit-animation: contentSlideDown 0.5s;
