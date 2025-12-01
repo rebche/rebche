@@ -17,13 +17,14 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 })
 
-// drop-down arrow change animation for work page
+// drop-down for work page
 
 function dropdown(project, event) {
     const content = document.getElementById(project);
     const arrow = event.target;
 
     content.classList.toggle("show");
+
 
     if (content.classList.contains("show")) {
         arrow.src = arrow.dataset.upArrow;
@@ -63,7 +64,7 @@ function snackbar() {
 // home page greeting animation + fade
 
 window.addEventListener('DOMContentLoaded', () => {
-    var greetings = ["Hello!", "你好!", "¡Hola!"];
+    var greetings = ["Hello!", "你好!"];
     var counter = 1;
     var currentLanguage = document.getElementById('greeting');
     setInterval(changeLanguage, 3500);
