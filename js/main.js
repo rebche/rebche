@@ -62,18 +62,22 @@ function snackbar() {
 
 // home page greeting animation + fade
 
-var greetings = ["Hello!", "你好!", "¡Hola!"];
-var counter = 0;
-var currentLanguage = document.getElementById('greeting');
-setInterval(changeLanguage, 3500);
+window.addEventListener('DOMContentLoaded', () => {
+    var greetings = ["Hello!", "你好!", "¡Hola!"];
+    var counter = 1;
+    var currentLanguage = document.getElementById('greeting');
+    setInterval(changeLanguage, 3500);
 
-function changeLanguage() {
-    currentLanguage.style.opacity = '0';
-    setTimeout(() => {
-    currentLanguage.innerHTML = greetings[counter];
-    counter++;
-    if (counter >= greetings.length) {counter = 0;}   
-    currentLanguage.style.opacity = '1';
-    }, 500);
-}
+    function changeLanguage() {
+        currentLanguage.style.opacity = '0';
+        setTimeout(() => {
+        currentLanguage.innerHTML = greetings[counter];
+        counter++;
+        if (counter >= greetings.length) {counter = 0;}   
+        currentLanguage.style.opacity = '1';
+        }, 500);
+    }
+
+})
+
 
