@@ -57,14 +57,106 @@
                             Candle Maker is an automated candle-making machine built for hobbyists and small businesses.
                             For this project, I served as an electrical/computer hardware engineer primarily focused on the design
                             of the cooling system and user interface. 
-
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
                         </p>
 
+                        <figure class="row">
+                            <section class="column">
+                                <img src="../images/candlemaker-board.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                            </section>
+                            <section class="column">
+                                <img src="../images/candlemaker-schematic-cover-page.png " onclick="openModal();currentSlide(2)" class="hover-shadow">
+                            </section>
+                        </figure>
+
+                        <figure class="row">
+                            <section class="column">
+                                <img src="../images/candlemaker-cooling-schematic.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                            </section>
+                            <section class="column">
+                                <img src="../images/candlemaker-ui-schematic.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                            </section>
+                        </figure>
+
+                        <figure class="row">
+                            <section class="column">
+                                <img src="../images/candlemaker.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="The Candle Maker!">
+                            </section>
+                            <section class="column">
+                                <img src="../images/candlemaker-team.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="Team Candle Maker ˙𐃷˙">
+                            </section>
+                        </figure>
+
+                        <main id="myModal" class="modal">
+                            <span class="close-cursor" onclick="closeModal()">&times;</span>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            
+                            <article class="modal-content">
+                                <footer class="mySlides">
+                                    <p class="numbertext">1 / 6</p>
+                                    <img src="../images/candlemaker-board.png">
+                                </footer>
+
+                                <footer class="mySlides">
+                                    <p class="numbertext">2 / 6</p>
+                                    <img src="../images/candlemaker-schematic-cover-page.png">
+                                </footer>
+
+                                <footer class="mySlides">
+                                    <p class="numbertext">3 / 6</p>
+                                    <img src="../images/candlemaker-cooling-schematic.png">
+                                </footer>
+
+                                <footer class="mySlides">
+                                    <p class="numbertext">4 / 6</p>
+                                    <img src="../images/candlemaker-ui-schematic.png">
+                                </footer>
+
+                                <footer class="mySlides">
+                                    <p class="numbertext">5 / 6</p>
+                                    <img src="../images/candlemaker.jpg">
+                                </footer>
+
+                                <footer class="mySlides">
+                                    <p class="numbertext">6 / 6</p>
+                                    <img src="../images/candlemaker-team.jpg">
+                                </footer>
+
+                                <footer class="caption-container">
+                                    <p id="caption"></p>
+                                </footer>
+
+                                <footer class="thumbnails-container">
+                                 
+                                    <figure class="column">
+                                        <img class="thumbnail" src="../images/candlemaker-board.png" onclick="currentSlide(1)" alt="Candle Maker PCB">
+                                    </figure>
+
+                                    <figure class="column">
+                                        <img class="thumbnail" src="../images/candlemaker-schematic-cover-page.png" onclick="currentSlide(2)" alt="Schematic cover page for Candle Maker.">
+                                    </figure>
+
+                                    <figure class="column">
+                                        <img class="thumbnail" src="../images/candlemaker-cooling-schematic.png" onclick="currentSlide(3)" alt="Schematic for cooling subsystem.">
+                                    </figure>
+
+                                    <figure class="column">
+                                        <img class="thumbnail" src="../images/candlemaker-ui-schematic.png" onclick="currentSlide(4)" alt="Schematic for user interface subsystem.">
+                                    </figure>
+
+                                    <figure class="column">
+                                        <img class="thumbnail" src="../images/candlemaker.jpg" onclick="currentSlide(5)" alt="The Candle Maker!">
+                                    </figure>
+
+                                    <figure class="column">
+                                        <img class="thumbnail" src="../images/candlemaker-team.jpg" onclick="currentSlide(6)" alt="Team Candle Maker ˙𐃷˙">
+                                
+                                    </footer>
+
+                                </figure>
+                            </article>
+
+                        </main>
 
                     </article>
 
