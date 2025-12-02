@@ -1,4 +1,5 @@
-personal website/portfolio started on 11/28/2025 <3
+website/portfolio started on 11/28/2025 :)
+
 still work in progress and will continue to change
 
 things needed to be added:
