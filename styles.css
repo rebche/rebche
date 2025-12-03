@@ -472,7 +472,7 @@ a:hover {
 }
 
 .modal .column {
-    float: none; /* Remove float */
+    float: none;
     width: auto;
 }
 
@@ -538,9 +538,7 @@ a:hover {
     font-weight: bold;
     font-size: 20px;
     transition: 0.6s ease;
-    user-select: none;
-
-    
+    user-select: none;   
 }
 
 .prev {
@@ -575,6 +573,10 @@ a:hover {
     background-color: black;
     padding: 2px 16px;
     color: white;
+}
+
+#caption {
+    font-style: italic;
 }
 
 img.thumbnail {

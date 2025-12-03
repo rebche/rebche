@@ -86,8 +86,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 function openModal() {
     document.getElementById("myModal").style.display = "block";
-
-    
 }
 
 function closeModal() {
